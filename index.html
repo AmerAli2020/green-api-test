@@ -3,208 +3,231 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Green API Technical Support Candidate</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Green API System - Instance 1103273880</title>
     <style>
-        :root {
-            --primary-color: #2c8a3a;
-            --secondary-color: #f8f9fa;
-            --accent-color: #28a745;
-            --text-color: #333;
-        }
-        
+        /* Main page styling */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f8f9fa;
             line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--secondary-color);
-            margin: 0;
-            padding: 0;
         }
         
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 30px;
+        /* Authentication box styling */
+        .auth-box {
             background: white;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
         }
         
-        header {
-            text-align: center;
-            margin-bottom: 30px;
-            border-bottom: 2px solid var(--primary-color);
-            padding-bottom: 20px;
+        /* Form elements styling */
+        input, button {
+            padding: 10px;
+            margin: 8px 0;
+            width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
         }
         
+        /* Button styling */
+        button {
+            background-color: #2c8a3a; /* Green API brand color */
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+            font-weight: bold;
+        }
+        
+        button:hover {
+            background-color: #248232; /* Darker green on hover */
+        }
+        
+        /* Response display area */
+        #response {
+            background: white;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 8px;
+            white-space: pre-wrap;
+            font-family: monospace;
+            min-height: 100px;
+            border: 1px solid #eee;
+            overflow-x: auto;
+        }
+        
+        /* Utility classes */
+        .hidden {
+            display: none;
+        }
+        
+        /* Header styling */
         h1 {
-            color: var(--primary-color);
+            color: #2c8a3a;
             margin-bottom: 10px;
         }
         
-        .tagline {
-            color: #666;
-            font-size: 1.1rem;
-        }
-        
-        .profile-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 5px solid var(--primary-color);
-            margin: 0 auto 20px;
-            display: block;
-        }
-        
+        /* Section spacing */
         .section {
-            margin-bottom: 25px;
-        }
-        
-        .section-title {
-            color: var(--primary-color);
-            border-bottom: 1px solid #eee;
-            padding-bottom: 5px;
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-        }
-        
-        .section-title i {
-            margin-right: 10px;
-        }
-        
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-        
-        .skill {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-        }
-        
-        .contact-info {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-        
-        .contact-item {
-            display: flex;
-            align-items: center;
-        }
-        
-        .contact-item i {
-            width: 30px;
-            color: var(--primary-color);
-        }
-        
-        .btn {
-            display: inline-block;
-            background: var(--primary-color);
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            margin-top: 10px;
-        }
-        
-        .btn:hover {
-            background: var(--accent-color);
-            transform: translateY(-2px);
-        }
-        
-        footer {
-            text-align: center;
-            margin-top: 30px;
-            color: #666;
-            font-size: 0.9rem;
-        }
-        
-        @media (max-width: 768px) {
-            .container {
-                margin: 20px;
-                padding: 20px;
-            }
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <!-- Replace with your image or remove this div -->
-            <div class="profile-img-placeholder" style="width:150px; height:150px; background:#eee; border-radius:50%; margin:0 auto 20px;"></div>
-            <h1>Amer Ahmed</h1>
-            <p class="tagline">Technical Support Specialist Candidate</p>
-        </header>
-        
-        <div class="section">
-            <h2 class="section-title"><i class="fas fa-user"></i> About Me</h2>
-            <p>Experienced technical support professional with 3+ years in troubleshooting complex systems, specializing in API support and customer service. Passionate about solving technical challenges and improving user experiences.</p>
+    <!-- Page Header -->
+    <h1>Green API System</h1>
+    <p>Linked Phone Number: <strong>79857188721</strong></p>
+    
+    <!-- Authentication Section -->
+    <div class="auth-box">
+        <h3>Authentication Details</h3>
+        <div>
+            <label for="idInstance">ID Instance:</label>
+            <input type="text" id="idInstance" value="1103273880" readonly>
         </div>
         
-        <div class="section">
-            <h2 class="section-title"><i class="fas fa-cogs"></i> Technical Skills</h2>
-            <div class="skills">
-                <span class="skill">API Troubleshooting</span>
-                <span class="skill">Technical Documentation</span>
-                <span class="skill">HTML/CSS</span>
-                <span class="skill">Postman</span>
-                <span class="skill">Git</span>
-                <span class="skill">Customer Support</span>
-                <span class="skill">Linux</span>
-                <span class="skill">Network Diagnostics</span>
-            </div>
+        <div>
+            <label for="apiToken">API Token:</label>
+            <input type="password" id="apiToken" value="4e11f7e443894eb4893eb8807dd95730921df2b422c042" readonly>
+            <small><em>Note: This token is sensitive and should not be shared</em></small>
         </div>
-        
-        <div class="section">
-            <h2 class="section-title"><i class="fas fa-briefcase"></i> Experience</h2>
-            <h3>Technical Support Engineer | ABC Tech (2021-Present)</h3>
-            <ul>
-                <li>Resolved 100+ API integration issues monthly</li>
-                <li>Created technical documentation reducing support tickets by 30%</li>
-                <li>Trained 15+ new team members on support protocols</li>
-            </ul>
-        </div>
-        
-        <div class="section">
-            <h2 class="section-title"><i class="fas fa-id-card"></i> Contact</h2>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <span>ameraliahmed2019@gmail.com</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-phone"></i>
-                    <span>+79857188721</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fab fa-github"></i>
-                    <span>amerali2020.github.io</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fab fa-telegram"></i>
-                    <span>@amoor2025</span>
-                </div>
-            </div>
-        </div>
-        
-        <div class="section">
-            <h2 class="section-title"><i class="fas fa-file-alt"></i> Application Documents</h2>
-            <a href="#" class="btn"><i class="fas fa-download"></i> Download Resume</a>
-            <a href="#" class="btn"><i class="fas fa-link"></i> GitHub Repository</a>
-        </div>
-        
-        <footer>
-            <p>Created for Green API Technical Support Position | © 2023</p>
-        </footer>
     </div>
+
+    <!-- API Actions Section -->
+    <div class="actions">
+        <!-- Basic API Methods -->
+        <button onclick="getSettings()">Get Settings</button>
+        <button onclick="getStateInstance()">Check Connection Status</button>
+        
+        <!-- Message Sending Section -->
+        <div class="section">
+            <h3>Send Message</h3>
+            <input type="text" id="phone" placeholder="Destination number (e.g., 966501234567)" value="79857188721">
+            <input type="text" id="message" placeholder="Message text">
+            <button onclick="sendMessage()">Send Message</button>
+        </div>
+        
+        <!-- File Sending Section -->
+        <div class="section">
+            <h3>Send File</h3>
+            <input type="text" id="fileUrl" placeholder="File URL (e.g., https://example.com/file.jpg)">
+            <button onclick="sendFileByUrl()">Send File</button>
+        </div>
+    </div>
+
+    <!-- Results Display Section -->
+    <div class="section">
+        <h3>Execution Results:</h3>
+        <div id="response">Results will appear here...</div>
+    </div>
+
+    <script>
+        /**
+         * Global Constants
+         */
+        const API_BASE_URL = "https://1103.api.green-api.com";
+        
+        /**
+         * Generic API call function
+         * @param {string} endpoint - API endpoint to call
+         * @param {Object} data - Optional data to send with POST requests
+         * @returns {Promise} - Promise that resolves with API response
+         */
+        async function callApi(endpoint, data = {}) {
+            // Get authentication values from form
+            const idInstance = document.getElementById('idInstance').value;
+            const apiToken = document.getElementById('apiToken').value;
+            const responseDiv = document.getElementById('response');
+            
+            try {
+                // Show loading state
+                responseDiv.innerHTML = "<span style='color:#2c8a3a'>Processing request...</span>";
+                
+                // Make API call
+                const response = await fetch(`${API_BASE_URL}/waInstance${idInstance}/${endpoint}/${apiToken}`, {
+                    method: data ? 'POST' : 'GET',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: data ? JSON.stringify(data) : null
+                });
+                
+                // Handle HTTP errors
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                // Process successful response
+                const result = await response.json();
+                responseDiv.innerHTML = `<span style="color:#2c8a3a">Success:</span>\n${JSON.stringify(result, null, 2)}`;
+                return result;
+                
+            } catch (error) {
+                // Handle errors
+                responseDiv.innerHTML = `<span style="color:red">Error:</span> ${error.message}`;
+                console.error("API Error:", error);
+                return null;
+            }
+        }
+
+        /**
+         * API Wrapper Functions
+         */
+        
+        // Get account settings
+        function getSettings() { 
+            callApi('getSettings'); 
+        }
+        
+        // Check instance connection status
+        function getStateInstance() { 
+            callApi('getStateInstance'); 
+        }
+        
+        /**
+         * Send WhatsApp message
+         */
+        function sendMessage() {
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+            
+            // Validate inputs
+            if (!phone || !message) {
+                alert("Please enter both phone number and message");
+                return;
+            }
+            
+            // Format phone number and send
+            callApi('sendMessage', {
+                chatId: `${phone}@c.us`, // WhatsApp chat ID format
+                message: message
+            });
+        }
+        
+        /**
+         * Send file via URL
+         */
+        function sendFileByUrl() {
+            const phone = document.getElementById('phone').value;
+            const fileUrl = document.getElementById('fileUrl').value;
+            
+            // Validate inputs
+            if (!phone || !fileUrl) {
+                alert("Please enter both phone number and file URL");
+                return;
+            }
+            
+            // Extract filename from URL and send
+            callApi('sendFileByUrl', {
+                chatId: `${phone}@c.us`,
+                urlFile: fileUrl,
+                fileName: fileUrl.split('/').pop(), // Extract filename
+                caption: "File sent via Green API"
+            });
+        }
+    </script>
 </body>
 </html>
